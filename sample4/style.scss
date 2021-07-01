@@ -226,3 +226,50 @@ $palette-red: #E03131;
     }
 
 }
+
+
+/*location*/
+
+.location {
+    &__parallax {
+        background-image: url(img/location.jpg);
+        @include parallax;
+    }
+
+    &__title {
+        @include main-title;
+    }
+
+    &__content {
+        max-width: 1000px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 96px 16px 150px;
+    }
+
+    &__sub-title {
+        @include sub-title;
+        margin-bottom: 90px;
+    }
+
+    &__map {
+        margin-bottom: 22px;
+        filter: grayscale(100%);
+    }
+
+    &__info {
+        text-align: left;
+    }
+
+    &__access {
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    &__hours {
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+
+}
