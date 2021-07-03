@@ -25,7 +25,7 @@ $palette-red: #E03131;
     padding: 0 16px 150px;
 }
 
-@mixin main-title {
+@mixin mainTitle {
     font-size: 72px;
     font-weight: bold;
     color: $palette-white;
@@ -36,7 +36,7 @@ $palette-red: #E03131;
     text-shadow: 1px 1px 20px $palette-white;
 }
 
-@mixin sub-title {
+@mixin subTitle {
     display: inline-block;
     font-size: 40px;
     font-weight: bold;
@@ -104,7 +104,7 @@ $palette-red: #E03131;
     }
 
     &__title {
-        @include main-title;
+        @include mainTitle;
     }
 
     &__content {
@@ -119,7 +119,7 @@ $palette-red: #E03131;
     border-right: 1px solid #000;
 
     &__title {
-        @include sub-title;
+        @include subTitle;
     }
 
     &__list {
@@ -149,7 +149,7 @@ $palette-red: #E03131;
     margin-bottom: 66px;
 
     &__title {
-        @include sub-title;
+        @include subTitle;
     }
 
     &__list {
@@ -172,7 +172,7 @@ $palette-red: #E03131;
 
 .other {
     &__title {
-        @include sub-title;
+        @include subTitle;
     }
 
     &__list {
@@ -199,7 +199,7 @@ $palette-red: #E03131;
 /* ---------- about ----------*/
 
 .about {
-
+    
     &__parallax {
         background-image: url(img/about.jpg);
         @include parallax;
@@ -207,7 +207,7 @@ $palette-red: #E03131;
     }
 
     &__title {
-        @include main-title;
+        @include mainTitle;
     }
 
     &__content {
@@ -215,7 +215,7 @@ $palette-red: #E03131;
     }
 
     &__sub-title {
-        @include sub-title;
+        @include subTitle;
     }
 
     &__list {
@@ -288,7 +288,7 @@ $palette-red: #E03131;
     }
 
     &__title {
-        @include main-title;
+        @include mainTitle;
     }
 
     &__content {
@@ -297,7 +297,7 @@ $palette-red: #E03131;
     }
 
     &__sub-title {
-        @include sub-title;
+        @include subTitle;
     }
 
     &__map {
@@ -350,17 +350,17 @@ $palette-red: #E03131;
 $media-tablet: 960px;
 $media-sp: 768px;
 
-@mixin parallax-sp {
+@mixin parallax__sp {
     /*スクロールに合わせて背景画像を動かす*/
     background-attachment: scroll;
     height: 94px;
     }
 
-@mixin main-title-sp {
+@mixin mainTitle__sp {
     font-size: 32px;
 }
 
-@mixin sub-title-sp {
+@mixin subTitle__sp {
     font-size: 20px;
     margin-bottom: 34px;
 
@@ -425,49 +425,49 @@ $media-sp: 768px;
 
     .menu {
         &__parallax {
-            @include parallax-sp;
+            @include parallax__sp;
             margin-bottom: 33px;
         }
 
         &__title {
-            @include main-title-sp;
+            @include mainTitle__sp;
         }
 
         &__sub-title {
-            @include sub-title-sp;
+            @include subTitle__sp;
         }
 
         .coffee {
             &__title {
-                @include sub-title-sp;
+                @include subTitle__sp;
             }
         }
 
         .other {
             &__title {
-                @include sub-title-sp;
+                @include subTitle__sp;
             }
         }
 
         .food {
             &__title {
-                @include sub-title-sp();
+                @include subTitle-sp;
             }
         }
     }
 
     .about {
         &__parallax {
-            @include parallax-sp;
+            @include parallax__sp;
             margin-bottom: 33px;
         }
 
         &__title {
-            @include main-title-sp;
+            @include mainTitle__sp;
         }
 
         &__sub-title {
-            @include sub-title-sp;
+            @include subTitle__sp;
         }
 
         &__list {
@@ -477,16 +477,16 @@ $media-sp: 768px;
 
     .location {
         &__parallax {
-            @include parallax-sp;
+            @include parallax__sp;
             margin-bottom: 33px;
         }
 
         &__title {
-            @include main-title-sp;
+            @include mainTitle__sp;
         }
 
         &__sub-title {
-            @include sub-title-sp;
+            @include subTitle__sp;
         }
     }
 
