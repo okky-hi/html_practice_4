@@ -199,7 +199,6 @@ $palette-red: #E03131;
 /* ---------- about ----------*/
 
 .about {
-    
     &__parallax {
         background-image: url(img/about.jpg);
         @include parallax;
