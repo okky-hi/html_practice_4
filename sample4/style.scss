@@ -355,6 +355,20 @@ $media-sp: 768px;
 }
 
 @media screen and (max-width: $media-sp) {
+    .header {
+        background-position: 75% 40%;
+        height: 100vh;
+
+        &__list {
+            justify-content: center;
+        }
+
+        &__item {
+            font-size: 14px;
+            margin: 0 auto
+        }
+    }
+
     .menu {
         &__parallax {
             @include parallax-sp;
