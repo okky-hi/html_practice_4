@@ -6,10 +6,11 @@ $palette-red: #E03131;
 /*mixin*/
 
 @mixin parallax {
+    /*maintitle用*/
     position: relative;
-    background-size: cover;
     /*背景画像を固定*/
     background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
