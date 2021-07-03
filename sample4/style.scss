@@ -8,10 +8,11 @@ $palette-red: #E03131;
 @mixin parallax {
     position: relative;
     background-size: cover;
+    /*背景画像を固定*/
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 2;
+    background-position: center;
+    z-index: -1;
     height: 300px;
 
 }
@@ -349,6 +350,7 @@ $media-tablet: 960px;
 $media-sp: 768px;
 
 @mixin parallax-sp {
+    /*スクロールに合わせて背景画像を動かす*/
     background-attachment: scroll;
     height: 94px;
     }
